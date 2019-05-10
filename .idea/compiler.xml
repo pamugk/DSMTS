@@ -6,8 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="VisualModelLib" />
+        <module name="vismodellib" />
+        <module name="interchangeinterface" />
         <module name="DsmtsInterchange" />
+        <module name="importexportlib" />
+        <module name="VisualModelLib" />
         <module name="InterchangeInterface" />
       </profile>
     </annotationProcessing>

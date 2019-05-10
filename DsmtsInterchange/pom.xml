@@ -23,6 +23,12 @@
         </plugins>
     </build>
     <dependencies>
+        <!-- https://mvnrepository.com/artifact/xstream/xstream -->
+        <dependency>
+            <groupId>xstream</groupId>
+            <artifactId>xstream</artifactId>
+            <version>1.2.2</version>
+        </dependency>
         <dependency>
             <groupId>dsmts</groupId>
             <artifactId>interchangeinterface</artifactId>
