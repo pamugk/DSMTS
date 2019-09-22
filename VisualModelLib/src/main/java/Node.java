@@ -31,7 +31,7 @@ public class Node {
         return new ArrayList<>(inputPoles.values());
     }
     public List<Pole> getOutputPoles(){
-        return new ArrayList<>(inputPoles.values());
+        return new ArrayList<>(outputPoles.values());
     }
 
     public PolarHypergraph getInnerStructure() {
@@ -65,7 +65,7 @@ public class Node {
     //Возвращает true, есди добавление удалось (добавляемый полюс еще не является выходным для вершины),
     //Иначе - false (добавляемый полюс уже является выходным для вершины)
     public boolean tryAddOutputPole(Pole pole) {
-        return pole != null && pole.getParent().getId().equals(id) && inputPoles.putIfAbsent(pole.getId(), pole) == null;
+        return pole != null && pole.getParent().getId().equals(id) && outputPoles.putIfAbsent(pole.getId(), pole) == null;
     }
 
     //Метод для удаления полюса из вершины по переданному ID полюса

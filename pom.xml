@@ -12,6 +12,7 @@
         <module>DsmtsInterchange</module>
         <module>VisualModelLib</module>
         <module>InterchangeInterface</module>
+        <module>test</module>
     </modules>
 
 
